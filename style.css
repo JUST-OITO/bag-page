@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+    background: url("assets/wpp4.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.apps {
+    background-color: rgba(0, 0, 0, 0.284);
+    backdrop-filter: blur(2px);
+    filter: drop-shadow(2px 2px 1.5px rgba(0, 0, 0, 0.237));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 125px;
+    width: 750px;
+    margin-top: 20vh;
+    border-radius: 20px;
+    gap: 20px;
+    padding: 5px;
+    animation: emojisAnimates 1.5s;
+}
+
+.apps div p {
+    font-size: 18px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: #7b022f;
+}
+
+.apps a {
+    cursor: pointer;
+}
+
+.apps a img {
+    --z: 75px;
+    width: var(--z);
+    height: var(--z);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    transition: 100ms;
+}
+
+.apps img:hover{
+    --z: 95px;
+    width: var(--z);
+    height: var(--z);
+}
+
+#OITO {
+    border-radius: 20px;
+}
+
+
+
+@media (min-width: 1280px) {
+    .apps {
+        width: 100%;
+    }
+}
+
+@keyframes emojisAnimates{
+    0%{
+        opacity: 0%;
+        transform: translateY(-200px);
+    }50%{
+        transform: translateY(-15px)
+    }100%{
+        transform: translateY(0px)
+    }
+}
+
